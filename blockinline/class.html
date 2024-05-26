@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Atrribute</title>
+    <style>
+        .city{
+            background-color:tomato;
+            color:white;
+            border:2px solid black;
+            margin: 20px;
+            padding: 20px;    
+        }
+        .note{
+            font-size: 120%;
+            color: gold;
+        }
+        .main{
+            text-align: center;
+        }
+        .city1{
+            background-color: aquamarine;
+            color: blueviolet;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>paris is the Capital of France.</p>
+    </div>
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tpkyo is the capital of Japan</p>
+    </div>
+    <p> we have two <span> elements with a class attribute with the value of "note". Both <span> elements will be styled equally according to the .note style definition in the head section:</p>
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <p>This is some <span class="note">Important</span> text.</p>
+    <h1>Multiple Classes</h1>
+    <div class="city main">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>paris is the Capital of France.</p>
+    </div>
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tpkyo is the capital of Japan</p>
+    </div>
+    <h1>Different Elements Can Share Same Class</h1>
+    
+<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+<h2 class="city1">Paris</h2>
+<p class="city1">Paris is the captial of France.</p>
+ <h1>Use of The class Attribute in JavaScript</h1>
+ <p>Clicks the Button to hide all elements with class name "city":</p>
+ <button onclick="myFunction()">Hide elements</button>
+ <h2 class="City2">London</h2>
+ <p>London is the capital of England.</p>
+ <h2 class="City2">Pairs</h2>
+ <p>Paris is the capital of France.</p>
+ <h2 class="City2">Tokyo</h2>
+ <p>Tokyo is the capital of Japan.</p>
+ <script>
+    function myFunction(){
+        var x=document.getElementsByClassName("City2");
+        for(var i=0;i<x.length;i++)
+        {
+            x[i].style.display="none";
+        }
+    }
+ </script>
+</body>
+</html>

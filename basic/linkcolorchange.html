@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the link state colors by using CSS</title>
+    <style>
+     a:link{
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+     }
+     a:visited{
+        color:pink;
+        background-color: transparent;
+        text-decoration: none;
+     }
+     a:hover{
+        color:red;
+        background-color: transparent;
+        text-decoration: underline;
+     }
+     a:active{
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+     }
+    </style>
+</head>
+
+<body>
+    <h1>Link Colors</h1>
+    <br><br><br>
+    <h3> An unvisited link will be green with no underline.A visited link will be pink with no underline.An active link
+        will be yellow and underlined.In addtion, when mousing over a link(a:hover) it will become red and underline.
+    </h3><br><br><br>
+    <h6>You can change the default colors of links</h6>
+    <a href="color.html" target="_blank">HTML Color</a>
+</body>
+
+</html>
